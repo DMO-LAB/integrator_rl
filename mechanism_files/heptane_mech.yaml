@@ -1,0 +1,34 @@
+generator: ck2yaml
+input-files: [heptane_mech.txt]
+cantera-version: 3.0.0
+date: Tue, 30 Apr 2024 01:20:15 -0500
+
+units: {length: cm, time: s, quantity: mol, activation-energy: cal/mol}
+
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements: [N, C, H, O]
+  species: [n2, ch3, h, ch4, h2, oh, h2o, o, c2h6, c2h5, hco, co, co2, o2,
+    h2o2, ho2, c2h4, ch3oh, ch2oh, ch3o, ch2o, c2h2, c2h3, c2h, hcco, ch2,
+    ch, ch2co, ch2(s), pc2h4oh, ch3co, ch3cho, c3h5-s, c3h4-p, c3h5-a, c3h6,
+    c3h4-a, ch3chco, c3h5-t, c4h6, nc3h7, ic3h7, c3h8, c5h9, c4h7, c4h8-1,
+    sc4h9, pc4h9, ch3coch3, ch3coch2, c2h5co, c2h5cho, c5h10-1, ch2cho,
+    c5h11-1, c5h11-2, c2h5o, c2h5o2, ch3o2, ch3o2h, c3h2, o2c2h4oh, c2h4o2h,
+    c2h3co, c2h3cho, c3h5o, c3h6o1-2, c3h6ooh1-2, c3h6ooh2-1, nc3h7o, ic3h7o,
+    nc3h7o2, ic3h7o2, c4h7o, c4h8ooh1-3o2, c4h8ooh1-3, nc4ket13, c4h8ooh1-2,
+    c4h8o1-3, pc4h9o2, c3h3, hocho, 'c2h3o1,2', nc3h7cho, nc3h7co, c3h6cho-2,
+    ch2ch2coch3, c2h5coch2, c2h5coc2h4p, nc3h7coch2, nc4h9cho, nc4h9co,
+    hoch2o, c6h13-1, c6h12-1, c6h11, nc7h16, c7h15-1, c7h15-2, c7h15-3,
+    c7h15-4, c7h15o2-1, c7h15o2h-1, c7h15o2-2, c7h15o2h-2, c7h15o2-3, c7h15o2h-3,
+    c7h14-1, c7h14-2, c7h14-3, c7h13, c7h15o2-4, c7h15o-1, c7h15o-2, c7h15o-3,
+    c7h14ooh1-2, c7h14ooh1-3, c7h14ooh1-4, c7h14ooh2-3, c7h14ooh2-4, c7h14ooh2-5,
+    c7h14ooh3-1, c7h14ooh3-2, c7h14ooh3-4, c7h14ooh3-5, c7h14ooh3-6, c7h14ooh4-2,
+    c7h14ooh4-3, c7h14o1-3, c7h14o1-4, c7h14o2-4, c7h14o2-5, c7h14o3-5,
+    c7h14ooh1-3o2, c7h14ooh2-3o2, c7h14ooh2-4o2, c7h14ooh2-5o2, c7h14ooh3-1o2,
+    c7h14ooh3-2o2, c7h14ooh3-4o2, c7h14ooh3-5o2, c7h14ooh3-6o2, c7h14ooh4-2o2,
+    c7h14ooh4-3o2, nc7ket13, nc7ket23, nc7ket24, nc7ket25, nc7ket31, nc7ket32,
+    nc7ket34, nc7ket35, nc7ket36, nc7ket42, nc7ket43, nc4h9coch2, c4h7ooh1-4,
+    c5h9ooh1-4, c4h7o1-4, c5h9o1-4]
+  kinetics: gas
+  state: {T: 300.0, P: 1 atm}
